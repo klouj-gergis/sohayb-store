@@ -1,0 +1,105 @@
+{
+  "store": {
+    "name": "Angles for candles",
+    "logo": "",
+    "tagline": "Handmade candles for every occasion",
+    "currency": "EGP",
+    "whatsApp": "+201234567890",
+    "instagram": "https://www.instagram.com/anglesforcandles",
+    "tiktok": "https://www.tiktok.com/@anglesforcandles"
+  },
+  "theme" : {
+    "primaryColor": "#FAF7F2",
+    "accentColor": "#C4855A",
+    "bgAccentColor": "#F5ECD7",
+    "darkAccentColor": "#8B5E3C",
+    "fontHeading": "Playfair Display",
+    "fontBody": "Inter",
+    "fontAccent": "Playball"
+  },
+  "anouncement": {
+    "message": "Free shipping on orders over 500 EGP!",
+    "link": "/products",
+    "linkText": "Shop Now"
+  },
+  "hero": {
+    "title-first": "Made by Hand",
+    "title-second": "Felt by Heart",
+    "subtitle": "Discover our handmade candles, crafted with love and care.",
+    "description": "Discover our handmade candles, crafted with love and care. Perfect for any occasion.",
+    "image": "https://example.com/hero-image.jpg",
+    "ctaText": "Shop Now",
+    "ctaLink": "/products",
+    "secondaryCtaText": "Custom Order",
+    "secondaryCtaLink": "whatsapp://send?phone=+201012425386&text=Hello%20Angles%20for%20Candles%2C%20I%20would%20like%20to%20place%20a%20custom%20order."
+  },
+  "categories": [
+    {
+      "name": "Scented Candles",
+      "image": "https://example.com/scented-candles.jpg",
+      "link": "/products/scented-candles"
+    },
+    {
+      "name": "Decorative Candles",
+      "image": "https://example.com/decorative-candles.jpg",
+      "link": "/products/decorative-candles"
+    },
+    {
+      "name": "Gift Sets",
+      "image": "https://example.com/gift-sets.jpg",
+      "link": "/products/gift-sets"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Lavender Scented Candle",
+      "description": "Relaxing lavender scent in a beautiful glass jar.",
+      "price": 150,
+      "image": "https://example.com/lavender-candle.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Vanilla Bean Candle",
+      "description": "Warm vanilla scent in a rustic tin container.",
+      "price": 120,
+      "image": "https://example.com/vanilla-candle.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rose Garden Candle",
+      "description": "Floral rose scent in an elegant ceramic holder.",
+      "price": 180,
+      "image": "https://example.com/rose-candle.jpg"
+    }
+  ],
+  "payment": {
+    "methods": [{ "enabled": true, "name": "vodafone cash", "number": "0123456789"}, { "enabled": true, "name": "fawry", "ref": "xxxxxx"}, "Cash on Delivery"],
+    "currency": "EGP"
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "Products",
+      "link": "/products"
+    },
+    {
+      "name": "About Us",
+      "link": "/about"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "about": {
+    "title": "About Angles for Candles",
+    "content": "At Angles for Candles, we are passionate about creating beautiful, high-quality candles that bring warmth and ambiance to your home. Our candles are handmade using the finest ingredients, ensuring a long-lasting and delightful fragrance experience. Whether you're looking for a relaxing lavender scent or a romantic rose aroma, we have the perfect candle for every occasion.",
+    "image": "https://example.com/about-image.jpg",
+    "ctaText": "Shop Our Collection",
+    "ctaLink": "/products"
+  }
+}
