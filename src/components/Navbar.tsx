@@ -7,7 +7,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
     const navLinks = storeData.pages || [];
   return (
     <>
-    <nav className="hidden w-full md:flex items-center justify-between py-4 px-6 ">
+    <nav className="hidden w-full lg:flex items-center justify-between py-4 px-6 ">
       <h1 className="text-3xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>
 
       {
@@ -28,7 +28,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
       </div>
 
     </nav>
-    <nav className="md:hidden flex itmes-center justify-between px-4 py-5" >
+    <nav className="lg:hidden flex itmes-center justify-between px-4 py-5" >
       <div className="flex items-center gap-2">
         <DropdownMenu options={storeData.pages} />
         <h1 className="text-xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>

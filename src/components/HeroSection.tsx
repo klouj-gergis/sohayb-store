@@ -3,7 +3,7 @@ import { useStore } from "../context/StoreContext";
 export default function HeroSection() {
   const storeData = useStore();
   return (
-    <div className="w-full h-[80vh] bg-bg flex flex-col md:flex-row items-center justify-center">
+    <div className="w-full h-[80vh] bg-bg flex flex-col lg:flex-row items-center justify-center">
       <div className="max-w-7xl mx-auto h-full flex flex-col  justify-center gap-6">
         <h1 className="text-4xl md:text-6xl font-extrabold text-dark-accent tracking-wide">
           <span className="text-dark-accent">{storeData.hero["title-first"]}.</span>
