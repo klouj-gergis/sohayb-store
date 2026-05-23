@@ -31,7 +31,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
     <nav className="lg:hidden flex itmes-center justify-between px-4 py-5" >
       <div className="flex items-center gap-2">
         <DropdownMenu options={storeData.pages} />
-        <h1 className="text-xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>
+        <h1 className="text-2xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>
       </div>
       <div className="flex items-center gap-4">
           <button type="button" title="cart" onClick={() => openCart(true)} className="text-dark-accent cursor-pointer hover:text-accent"><ShoppingBag /></button>
