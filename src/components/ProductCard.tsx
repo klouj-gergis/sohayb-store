@@ -1,4 +1,4 @@
-import { Heart, Plus } from "lucide-react"
+import {  Plus } from "lucide-react"
 
 export default function ProductCard({ productData, currency }: { productData: {
     id: number;
