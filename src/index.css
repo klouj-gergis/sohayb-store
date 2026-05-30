@@ -3,7 +3,7 @@
 :root {
 
 
-  --shadow: 0 0 5px 5px #8B5E3C;
+  --shadow: 0 0 5px 5px #cec2ba;
 
   --playfairDisplay: 'Playfair Display', serif;
   --inter: 'Inter', sans-serif;
@@ -26,9 +26,9 @@
   --color-dark-accent: var(--dark-accent);
   --color-accent: var(--accent);
   --color-accent-bg: var(--accent-bg);
-  --color-shadow: var(--shadow);
+  --shadow-shadow: var(--shadow);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
   --font-accent: var(--font-accent);
-
-}
+  --font-playfairDisplay: var(--playfairDisplay);
+} 

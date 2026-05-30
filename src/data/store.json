@@ -56,21 +56,21 @@
       "name": "Lavender Scented Candle",
       "description": "Relaxing lavender scent in a beautiful glass jar.",
       "price": 150,
-      "image": "https://example.com/lavender-candle.jpg"
-    },
+      "image": "/candle_1.png"
+    },  
     {
       "id": 2,
       "name": "Vanilla Bean Candle",
       "description": "Warm vanilla scent in a rustic tin container.",
       "price": 120,
-      "image": "https://example.com/vanilla-candle.jpg"
+      "image": "/candle_2.png"
     },
     {
       "id": 3,
       "name": "Rose Garden Candle",
       "description": "Floral rose scent in an elegant ceramic holder.",
       "price": 180,
-      "image": "https://example.com/rose-candle.jpg"
+      "image": "/candle_3.png"
     }
   ],
   "payment": {
@@ -84,15 +84,15 @@
     },
     {
       "name": "Products",
-      "link": "/products"
+      "link": "#catalog"
     },
     {
       "name": "About Us",
-      "link": "/about"
+      "link": "#about"
     },
     {
       "name": "Contact",
-      "link": "/contact"
+      "link": "#contact"
     }
   ],
   "about": {

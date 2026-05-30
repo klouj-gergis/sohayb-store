@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import About from "./components/About"
 import { StoreProvider } from "./context/StoreContext.tsx"
 import { useState } from "react"
+import Catalog from "./components/Catalog.tsx";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       }
       <Navbar openCart={setIsCartOpen}/>
       <HeroSection />
+      <Catalog/>
       <About/>
     </div>
     </StoreProvider>
