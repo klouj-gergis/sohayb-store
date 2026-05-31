@@ -9,7 +9,7 @@ export default function ProductCard({ productData, currency }: { productData: {
 }, currency: string }) {
   return (
     <div className="bg-bg h-48 lg:h-56 rounded-lg shadow-shadow p-4 flex items-center gap-5">
-      <div className="w-1/3 h-full bg-accent/30 rounded-lg overflow-hidden p-5">
+      <div className="w-1/3 h-full bg-accent/30 rounded-lg overflow-hidden">
         <img src={productData.image} alt={productData.name} className="h-full  object-cover rounded-lg" />
       </div>
       <div className="w-2/3 h-full flex flex-col justify-between  pt-3">
