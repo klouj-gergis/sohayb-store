@@ -2,7 +2,7 @@ import { useStore } from "../context/StoreContext"
 export default function About(){
     const storeData = useStore()
     return (
-        <section className="w-full flex flex-col lg:flex-row items-center justify-center bg-dark-accent py-10 px-5 rounded-t-4xl lg:rounded-none">
+        <section className="w-full flex flex-col lg:flex-row items-center justify-center bg-dark-accent py-10 px-5 lg:gap-5 rounded-t-4xl lg:rounded-none">
             <div className="w-40 lg:w-3/6 h-40 lg:h-96 rounded-full lg:rounded-none overflow-hidden">
                 <img src="/about_candle.png" alt="owner's image" className="w-full" />
             </div>

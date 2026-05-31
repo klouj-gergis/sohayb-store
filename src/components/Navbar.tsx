@@ -22,7 +22,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
         )
       }
 
-      <div className="md:hidden flex items-center gap-4">
+      <div className="flex items-center gap-4">
         <button type="button" title="cart" className="text-dark-accent cursor-pointer hover:text-accent"><Search /></button>
         <button type="button" onClick={() => openCart(true)} title="cart" className="text-dark-accent cursor-pointer hover:text-accent"><ShoppingBag /></button>
       </div>
