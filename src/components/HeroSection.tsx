@@ -10,7 +10,7 @@ export default function HeroSection() {
           <br /> 
           <span className="text-accent font-accent">{storeData.hero["title-second"]}.</span> 
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-dark-accent/80 ">{storeData.hero.subtitle}</p>
+        <p className="px-2 text-center text-lg md:text-xl text-dark-accent/80 ">{storeData.hero.subtitle}</p>
         <div className="flex items-center gap-4">
           <a href={storeData.hero.ctaLink} className="inline-block px-6 py-3 bg-accent text-white rounded hover:bg-dark-accent transition-colors">{storeData.hero.ctaText}</a>
         <a href={storeData.hero.secondaryCtaLink} className="inline-block px-6 py-3 bg-dark-accent text-white rounded hover:bg-accent transition-colors">{storeData.hero.secondaryCtaText}</a>
