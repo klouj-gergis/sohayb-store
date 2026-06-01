@@ -21,12 +21,12 @@ export default function ReviewsCarosel() {
     <div className="relative">
       <button type='button' title="scroll button" onClick={() => scroll("left")} className="absolute left-5 top-1/2 transform -translate-y-1/2 bg-accent text-white p-2 rounded-full z-10"><ChevronLeft /></button>
       <button type='button' title="scroll button" onClick={() => scroll("right")} className="absolute right-5 top-1/2 transform -translate-y-1/2 bg-accent text-white p-2 rounded-full z-10"><ChevronRight /></button>
-    <div ref={ref} className=" overflow-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+    <div ref={ref} className=" overflow-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] snap-x snap-mandatory">
       
       <div className="flex w-fit">
        {
         storeData.reviews.map((review, index) => (
-          <div key={index} className="bg-accent/40 w-screen lg:h-screen p-10 flex flex-col items-center justify-center gap-4">
+          <div key={index} className="bg-accent/40 w-screen lg:h-screen p-10 flex flex-col items-center justify-center gap-4 snap-start snap-always">
             <FaQuoteLeft className="text-accent text-9xl"/>
             <p className="text-center text-lg lg:text-2xl max-w-4/6 text-dark-accent">{review.comment}</p>
             {
