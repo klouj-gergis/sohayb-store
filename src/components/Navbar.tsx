@@ -1,4 +1,4 @@
-import { ShoppingBag, Search } from "lucide-react"
+import { ShoppingBag } from "lucide-react"
 import { useStore } from "../context/StoreContext"
 import DropdownMenu from './DropdownMenu';
 import { useCart } from "../context/CartContext";
