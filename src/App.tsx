@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection.tsx";
 import Navbar from "./components/Navbar"
 import About from "./components/About"
+import ReviewsCarosel from "./components/ReviewsCarosel"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { StoreProvider } from "./context/StoreContext.tsx"
@@ -13,7 +14,7 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   return (
     <StoreProvider>
-    <div className="min-h-screen bg-bg">
+    <div className=" min-h-screen bg-bg">
       {
         isCartOpen && (
           <div className="fixed inset-0 bg-black/30 flex items-start justify-end z-50" onClick={() => setIsCartOpen(false)}>
@@ -29,6 +30,7 @@ function App() {
       <HeroSection />
       <Catalog/>
       <About/>
+      <ReviewsCarosel />
       <Contact />
       <Footer />
     </div>

@@ -101,5 +101,22 @@
     "image": "https://example.com/about-image.jpg",
     "ctaText": "Shop Our Collection",
     "ctaLink": "/products"
-  }
+  },
+  "reviews": [
+    {
+      "name": "Sarah M.",
+      "rating": 5,
+      "comment": "I absolutely love the lavender scented candle! It fills my room with such a calming aroma. Highly recommend!"
+    },
+    {
+      "name": "Ahmed K.",
+      "rating": 4,
+      "comment": "The vanilla bean candle has a wonderful scent and burns evenly. Great quality for the price."
+    },
+    {
+      "name": "Lina S.",
+      "rating": 5,
+      "comment": "The rose garden candle is stunning! The floral scent is perfect for creating a romantic atmosphere."
+    }
+  ]
 }
