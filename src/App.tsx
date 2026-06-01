@@ -1,6 +1,8 @@
 import HeroSection from "./components/HeroSection.tsx";
 import Navbar from "./components/Navbar"
 import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import { StoreProvider } from "./context/StoreContext.tsx"
 import { useState } from "react"
 import Catalog from "./components/Catalog.tsx";
@@ -27,6 +29,8 @@ function App() {
       <HeroSection />
       <Catalog/>
       <About/>
+      <Contact />
+      <Footer />
     </div>
     </StoreProvider>
   )
