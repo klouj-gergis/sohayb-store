@@ -41,7 +41,12 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
         <h1 className="text-2xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>
       </div>
       <div className="flex items-center gap-4">
-          <button type="button" title="cart" onClick={() => openCart(true)} className="text-dark-accent cursor-pointer hover:text-accent"><ShoppingBag /></button>
+          <button type="button" onClick={() => openCart(true)} title="cart" className="text-dark-accent cursor-pointer hover:text-accent relative">
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-accent text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">{cartCount}</span>
+            )}
+            <ShoppingBag />
+          </button>
       </div>
     </nav>
 
