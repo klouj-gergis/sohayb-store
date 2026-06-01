@@ -8,7 +8,7 @@ export default function Cart({ currency }: { currency: string }) {
  
   return (
     <div className="fixed inset-0 bg-black/30 flex items-start justify-end z-50" onClick={() => setIsCartOpen(false)}>
-            <div className="w-4/12 bg-white h-full p-6 rounded-lg shadow-lg" onClick={(e) => e.stopPropagation()}>
+            <div className="w-full lg:w-4/12 bg-white h-full p-6 rounded-lg shadow-lg" onClick={(e) => e.stopPropagation()}>
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-3xl text-dark-accent font-extrabold mb-4">Cart</h2>
               <button title="close cart" type="button" onClick={() => setIsCartOpen(false)} className="text-accent text-lg cursor-pointer"><X /></button>
