@@ -1,4 +1,5 @@
 import {  Plus } from "lucide-react"
+import { useCart } from "../context/CartContext.tsx";
 
 export default function ProductCard({ productData, currency }: { productData: {
     id: number;
@@ -7,6 +8,16 @@ export default function ProductCard({ productData, currency }: { productData: {
     price: number;
     image: string;
 }, currency: string }) {
+  const { addItem: addToCart } = useCart();
+  const handleAddToCart = () => {
+    addToCart({
+      id: productData.id,
+      name: productData.name,
+      image: productData.image,
+      price: productData.price,
+      quantity: 1,
+    });
+  };
   return (
     <div className="bg-bg h-48 lg:h-56 rounded-lg shadow-shadow p-4 flex items-center gap-5">
       <div className="w-1/3 h-full bg-accent/30 rounded-lg overflow-hidden">
@@ -19,7 +30,7 @@ export default function ProductCard({ productData, currency }: { productData: {
         </span>
       <span className="flex justify-between items-center">
         <p className="text-2xl font-bold text-dark-accent">{currency} {productData.price}</p>
-        <button title="add to cart" type="button" className="p-2 bg-accent/30 text-dark-accent rounded-full hover:bg-accent/50 cursor-pointer transition-colors"><Plus /></button>
+        <button onClick={handleAddToCart} title="add to cart" type="button" className="p-2 bg-accent/30 text-dark-accent rounded-full hover:bg-accent/50 cursor-pointer transition-colors"><Plus /></button>
       </span>
       </div>
     </div>

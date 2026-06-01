@@ -1,11 +1,13 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 // Types
 interface CartItem {
   id: number | string;
+  name: string;
   price: number;
   salePrice?: number;
   quantity: number;
+  image?: string;
 }
 
 interface CartContextType {
@@ -17,6 +19,8 @@ interface CartContextType {
   increaseQty: (productId: CartItem['id']) => void;
   decreaseQty: (productId: CartItem['id']) => void;
   clearCart: () => void;
+  isCartOpen: boolean;
+  setIsCartOpen: (open: boolean) => void;
 }
 
 const CartContext = createContext<CartContextType | null>(null);
@@ -27,11 +31,29 @@ export const useCart = () => {
   return context;
 };
 
+
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [items, setItems] = useState<CartItem[]>(() => {
-    const storedCart = localStorage.getItem('cartItems');
+    const storedCart = localStorage.getItem('cart');
     return storedCart ? JSON.parse(storedCart) : [];
   });
+
+  const [isCartOpen, setIsCartOpen] = useState(() => {
+    const storedState = localStorage.getItem('isCartOpen');
+    return storedState ? JSON.parse(storedState) : false;
+  });
+
+  
+useEffect(() => {
+  localStorage.setItem('cart', JSON.stringify(items));
+}, [items]);
+
+useEffect(() => {
+  localStorage.setItem(
+    'isCartOpen',
+    JSON.stringify(isCartOpen)
+  );
+}, [isCartOpen]);
 
   // ✅ Renamed to match context value, fixed missing else branch
   const addItem = (product: CartItem) => {
@@ -45,11 +67,13 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         return [...prevItems, { ...product, quantity: 1 }]; // ✅ was missing
       }
     });
+
   };
 
   // ✅ Renamed to match context value
   const removeItem = (productId: CartItem['id']) => {
     setItems((prevItems) => prevItems.filter(item => item.id !== productId));
+
   };
 
   // ✅ Renamed to match context value
@@ -72,7 +96,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     );
   };
 
-  const clearCart = () => setItems([]);
+  const clearCart = () => {setItems([])};
 
   // ✅ Was referencing `items` before it existed (state was named `cartItems`)
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
@@ -92,6 +116,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       increaseQty,
       decreaseQty,
       clearCart,
+      isCartOpen,
+      setIsCartOpen
     }}>
       {children}
     </CartContext.Provider>
