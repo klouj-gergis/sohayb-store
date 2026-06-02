@@ -2,7 +2,7 @@ import { X, Trash } from "lucide-react";
 import { useCart } from "../context/CartContext.tsx";
 
 
-export default function Cart({ currency }: { currency: string }) {
+export default function Cart({ currency, openCheckout }: { currency: string, openCheckout: (open: boolean) => void }) {
   const {  items, increaseQty, decreaseQty, setIsCartOpen, removeItem, clearCart } = useCart();
  
  
@@ -48,7 +48,10 @@ export default function Cart({ currency }: { currency: string }) {
                 <button type="button" title="clear cart" onClick={clearCart} className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors disabled:cursor-not-allowed disabled:bg-red-300" disabled={items.length < 1}>Clear Cart</button>
                 <div className="mt-6 flex justify-between items-center">
                 <button type="button" className="px-4 py-2 bg-gray-300 text-gray-700 rounded cursor-not-allowed" disabled>{`Total: ${items.reduce((total, item) => total + item.price * item.quantity, 0)} ${currency}`}</button>
-                <button type="button" className="px-4 py-2 bg-accent text-white rounded hover:bg-accent/90 transition-colors disabled:cursor-not-allowed disabled:bg-accent/50" disabled={items.length < 1}>Checkout</button>
+                <button onClick={() => {
+                  setIsCartOpen(false);
+                  openCheckout(true)
+                }} type="button" className="px-4 py-2 bg-accent text-white rounded hover:bg-accent/90 transition-colors disabled:cursor-not-allowed disabled:bg-accent/50" disabled={items.length < 1}>Checkout</button>
               </div>
               </div>
             </div>
