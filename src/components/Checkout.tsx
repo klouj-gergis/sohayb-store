@@ -25,7 +25,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
   }
 
   return (
-    <div className="relative w-3/6 bg-bg rounded-2xl flex flex-col justify-center items-center text-dark-accent p-5 gap-5">
+    <div className="relative w-full lg:w-3/6 h-screen lg:h-fit bg-bg rounded-2xl flex flex-col justify-center items-center text-dark-accent p-5 gap-5">
       <button type="button" title="close checkout" className="absolute top-3 right-3 hover:text-accent cursor-pointer" onClick={() => closeCheckout(false)}><X /></button>
       <h3 className="text-2xl font-semibold">Checkout</h3>
       <hr className="w-full text-accent" />
