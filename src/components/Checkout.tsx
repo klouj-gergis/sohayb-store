@@ -22,8 +22,8 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
 
   const sendmsg = (msg: string) => {
     window.open(`https://wa.me/201012425386?text=${encodeURIComponent(msg)}`)
+    closeCheckout(false)
     clearCart()
-    closeCart(false)
   }
 
   return (
