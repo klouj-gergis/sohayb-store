@@ -12,7 +12,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
     sender: ''
   })
 
-  const { items } = useCart();
+  const { items, clearCart } = useCart();
 
   function buildOrderMessage(data: { name: string, phone: string, address: string, payment_method: string, sender: string}, items: CartItem[]){  
     return `Hi,\nI would like to order these items, ${items.map(item => {
@@ -22,6 +22,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
 
   const sendmsg = (msg: string) => {
     window.open(`https://wa.me/201012425386?text=${encodeURIComponent(msg)}`)
+    clearCart()
   }
 
   return (
