@@ -3,6 +3,7 @@ import { X } from "lucide-react"
 import { useCart } from "../context/CartContext"
 import type {CartItem} from "../context/CartContext"
 import { toast } from 'react-hot-toast';
+import {useStore} from '../context/StoreContext'
 
 export default function Checkout({ closeCheckout }: { closeCheckout: (open: boolean) => void}) {
   const [checkoutData, setCheckoutData] = useState({
@@ -12,7 +13,8 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
     payment_method: 'cod',
     sender: ''
   })
-
+  const { methods: payment_methods } = useStore().payment;
+  const vcashreciever = payment_methods.find((method: { value: string }) => method.value === 'vodafone_cash')?.reciever || '';
   const { items, clearCart } = useCart();
 
   function buildOrderMessage(data: { name: string, phone: string, address: string, payment_method: string, sender: string}, items: CartItem[]){  
@@ -50,16 +52,18 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
           <input value={checkoutData.address} onChange={(e) => setCheckoutData({...checkoutData, address: e.target.value})} type="text" title="address" className="border border-accent rounded-md px-2 py-2" placeholder="enter your detailed address" required />
         </div>
         <div className="flex flex-col gap-1 w-full lg:w-5/12">
-          <label>Payment 6 Method:</label>
+          <label>Payment Method:</label>
           <select value={checkoutData.payment_method} onChange={(e) => setCheckoutData({...checkoutData, payment_method: e.target.value})} title="payment method" className="border border-accent focus:outline-none p-2 rounded-md">
-            <option value="cod" className="">Cash on deleviry</option>
-            <option value="vodafone_cash">Vodafone Cash</option>
+            { payment_methods.map((method: { enabled: boolean, name: string, value: string, reciever: string}) => method.enabled && (
+              <option key={method.name} value={method.value}>{method.name}</option>
+            )) }
           </select>
         </div>
         {
           checkoutData.payment_method === 'vodafone_cash' && <div className="w-full mx-11 flex flex-col gap-1">
             <hr />
-            <label >vodafone cash sender</label>
+            <p className="text-sm text-center text-dark-accent">Please send the total payment ammount to this vodafone cash number: <span className="text-lg font-semibold">{vcashreciever}</span> after that you can enter the sender's phone number for Vodafone Cash payment.</p>
+            <label >Vodafone cash sender:</label>
             <input value={checkoutData.sender} onChange={(e) => setCheckoutData({ ...checkoutData, sender: e.target.value})} type="phone" title="vodafone cash sender's phone number" placeholder="01234567891" className="border p-2 rounded-md" required />
           </div>
         }

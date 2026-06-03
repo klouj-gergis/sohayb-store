@@ -4,7 +4,7 @@
     "logo": "",
     "tagline": "Handmade candles for every occasion",
     "currency": "EGP",
-    "whatsApp": "+201234567890",
+    "whatsApp": "https://wa.me/201012425386",
     "instagram": "https://www.instagram.com/anglesforcandles",
     "tiktok": "https://www.tiktok.com/@anglesforcandles"
   },
@@ -27,29 +27,12 @@
     "title-second": "Felt by Heart",
     "subtitle": "Discover our handmade candles, crafted with love and care.",
     "description": "Discover our handmade candles, crafted with love and care. Perfect for any occasion.",
-    "image": "https://example.com/hero-image.jpg",
+    "image": "hero.png",
     "ctaText": "Shop Now",
     "ctaLink": "/products",
     "secondaryCtaText": "Custom Order",
     "secondaryCtaLink": "whatsapp://send?phone=+201012425386&text=Hello%20Angles%20for%20Candles%2C%20I%20would%20like%20to%20place%20a%20custom%20order."
   },
-  "categories": [
-    {
-      "name": "Scented Candles",
-      "image": "https://example.com/scented-candles.jpg",
-      "link": "/products/scented-candles"
-    },
-    {
-      "name": "Decorative Candles",
-      "image": "https://example.com/decorative-candles.jpg",
-      "link": "/products/decorative-candles"
-    },
-    {
-      "name": "Gift Sets",
-      "image": "https://example.com/gift-sets.jpg",
-      "link": "/products/gift-sets"
-    }
-  ],
   "products": [
     {
       "id": 1,
@@ -74,7 +57,7 @@
     }
   ],
   "payment": {
-    "methods": [{ "enabled": true, "name": "vodafone cash", "number": "0123456789"}, { "enabled": true, "name": "fawry", "ref": "xxxxxx"}, "Cash on Delivery"],
+    "methods": [{ "enabled": true, "name": "vodafone cash", "value": "vodafone_cash", "reciever": "0123456789"}, { "enabled": false, "name": "fawry", "reciever": "xxxxxx", "value": "fawry"}, { "name": "Cash on Delivery", "enabled": true , "value": "cod", "reciever": ""}],
     "currency": "EGP"
   },
   "pages": [

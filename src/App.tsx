@@ -34,7 +34,7 @@ function App() {
     <div className="relative min-h-screen bg-bg scroll-smooth">
       <Toaster position="top-center" reverseOrder={false} />
       {isCartOpen && <Cart  currency={currency} openCheckout={setIsCheckoutOpen} />}
-      {isCheckoutOpen && <div className="fixed w-full  h-screen top-0 left-0 bg-black/30 z-50 flex justify-center items-center" ><Checkout closeCheckout={setIsCheckoutOpen} /></div>}
+      {isCheckoutOpen && <div onClick={() => setIsCheckoutOpen(false)} className="fixed w-full  h-screen top-0 left-0 bg-black/30 z-50 flex justify-center items-center" ><Checkout closeCheckout={setIsCheckoutOpen} /></div>}
       <Navbar openCart={setIsCartOpen} />
       <HeroSection />
       <Catalog/>
