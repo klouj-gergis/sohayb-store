@@ -14,6 +14,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
     sender: ''
   })
   const { methods: payment_methods } = useStore().payment;
+  const storeData  = useStore();
   const vcashreciever = payment_methods.find((method: { value: string }) => method.value === 'vodafone_cash')?.reciever || '';
   const { items, clearCart } = useCart();
 
@@ -24,7 +25,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
   }
 
   const sendmsg = (msg: string) => {
-    window.open(`https://wa.me/201012425386?text=${encodeURIComponent(msg)}`)
+    window.open(`${storeData.store.whatsApp}=${encodeURIComponent(msg)}`)
     closeCheckout(false)
     clearCart()
     toast.success('Order placed successfully! We will contact you soon.')
