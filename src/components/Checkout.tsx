@@ -34,34 +34,34 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
       <form onSubmit={() => {
         const msg = buildOrderMessage(checkoutData, items);
         sendmsg(msg)
-      }} className="flex flex-wrap justify-center items-center gap-4">
-        <div className="flex flex-col gap-1 w-5/12 ">
+      }} className="flex flex-wrap justify-center items-center gap-4 px-5">
+        <div className="flex flex-col gap-1 w-full lg:w-5/12 ">
           <label>Name:</label>
           <input value={checkoutData.name} onChange={(e) => setCheckoutData({...checkoutData, name: e.target.value})} type="text" title="name" className="border border-accent rounded-md px-2 py-2" placeholder="enter your name" required />
         </div>
-        <div className="flex flex-col gap-1 w-5/12">
+        <div className="flex flex-col gap-1 w-full lg:w-5/12">
           <label>Phone Number:</label>
           <input value={checkoutData.phone} onChange={(e) => setCheckoutData({...checkoutData, phone: e.target.value})} type="phone" title="phone number" className="border border-accent rounded-md px-2 py-2" placeholder="01234567891" required />
         </div>
-        <div className="flex flex-col gap-1 w-5/12">
+        <div className="flex flex-col gap-1 w-full lg:w-5/12">
           <label>Address:</label>
           <input value={checkoutData.address} onChange={(e) => setCheckoutData({...checkoutData, address: e.target.value})} type="text" title="address" className="border border-accent rounded-md px-2 py-2" placeholder="enter your detailed address" required />
         </div>
-        <div className="flex flex-col gap-1 w-5/12">
-          <label>Payment Method:</label>
+        <div className="flex flex-col gap-1 w-full lg:w-5/12">
+          <label>Payment 6 Method:</label>
           <select value={checkoutData.payment_method} onChange={(e) => setCheckoutData({...checkoutData, payment_method: e.target.value})} title="payment method" className="border border-accent focus:outline-none p-2 rounded-md">
             <option value="cod" className="">Cash on deleviry</option>
             <option value="vodafone_cash">Vodafone Cash</option>
           </select>
         </div>
         {
-          checkoutData.payment_method === 'vodafone_cash' && <div className="w-full flex flex-col gap-1">
+          checkoutData.payment_method === 'vodafone_cash' && <div className="w-full mx-11 flex flex-col gap-1">
             <hr />
             <label >vodafone cash sender</label>
             <input value={checkoutData.sender} onChange={(e) => setCheckoutData({ ...checkoutData, sender: e.target.value})} type="phone" title="vodafone cash sender's phone number" placeholder="01234567891" className="border p-2 rounded-md" required />
           </div>
         }
-        <button type='submit' className="bg-dark-accent py-2 px-3 rounded-md text-bg place-self-end cursor-pointer">Order</button>
+        <button type='submit' className="w-full lg:mx-11 hover:bg-accent bg-dark-accent py-2 px-3 rounded-md text-bg place-self-end cursor-pointer">Order</button>
       </form>
     </div>
   )
