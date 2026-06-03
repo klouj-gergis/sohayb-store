@@ -32,3 +32,7 @@
   --font-accent: var(--font-accent);
   --font-playfairDisplay: var(--playfairDisplay);
 } 
+
+html {
+  scroll-behavior: smooth;
+}

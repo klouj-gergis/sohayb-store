@@ -6,13 +6,12 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 
 
 export default function ReviewsCarosel() {
-  const storeData = useStore();
+  const reviews = useStore().reviews || [];
   const ref = useRef<HTMLDivElement>(null);
-
 
   const scroll = (direction: "left" | "right") => {
     if(ref.current) {
-      const scrollAmount = direction === "left" ? -window.innerWidth : window.innerWidth;
+      const scrollAmount = direction === "left"  ? -window.innerWidth : window.innerWidth;
       ref.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
@@ -25,7 +24,7 @@ export default function ReviewsCarosel() {
       
       <div className="flex w-fit">
        {
-        storeData.reviews.map((review, index) => (
+        reviews.map((review, index) => (
           <div key={index} className="bg-accent/40 w-screen lg:h-screen p-10 flex flex-col items-center justify-center gap-4 snap-start snap-always">
             <FaQuoteLeft className="text-accent text-9xl"/>
             <p className="text-center text-lg lg:text-2xl max-w-4/6 text-dark-accent">{review.comment}</p>

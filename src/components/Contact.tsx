@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaTiktok   } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="pt-16 px-4 flex flex-col items-center gap-10">
+    <section id="contact" className="pt-16 px-4 flex flex-col items-center gap-10">
       <h2 className="text-2xl font-bold text-center text-dark-accent font-playfairDisplay">Angles for candles</h2>
       <p className="text-2xl font-body text-accent text-center -mt-8">Hand made in Egypt</p>
       <div className="flex items-center gap-8">
