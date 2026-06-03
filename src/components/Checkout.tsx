@@ -25,7 +25,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
   }
 
   const sendmsg = (msg: string) => {
-    window.open(`${storeData.store.whatsApp}=${encodeURIComponent(msg)}`)
+    window.open(`${storeData.store.whatsApp}?text=${encodeURIComponent(msg)}`)
     closeCheckout(false)
     clearCart()
     toast.success('Order placed successfully! We will contact you soon.')
