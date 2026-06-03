@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function DropdownMenu({ options }: { options: { name: string, link: string }[] }) {
@@ -9,7 +9,7 @@ export default function DropdownMenu({ options }: { options: { name: string, lin
   return (
     <div className="relative">
       <button onClick={toggleMenu} type="button" title="menu" className="text-dark-accent cursor-pointer hover:text-accent">
-        <Menu />
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
       <ul className={`absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg  ${isOpen ? 'block' : 'hidden'} flex flex-col`}  >
       {
