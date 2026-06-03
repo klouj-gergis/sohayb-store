@@ -12,6 +12,7 @@ import Cart from "./components/Cart.tsx";
 import { useStore } from "./context/StoreContext.tsx";
 import {  useCart } from "./context/CartContext.tsx";
 import { useState, useEffect } from "react"
+import {Toaster} from "react-hot-toast"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <StoreProvider>
       
     <div className="relative min-h-screen bg-bg scroll-smooth">
+      <Toaster position="top-center" reverseOrder={false} />
       {isCartOpen && <Cart  currency={currency} openCheckout={setIsCheckoutOpen} />}
       {isCheckoutOpen && <div className="fixed w-full  h-screen top-0 left-0 bg-black/30 z-50 flex justify-center items-center" ><Checkout closeCheckout={setIsCheckoutOpen} /></div>}
       <Navbar openCart={setIsCartOpen} />

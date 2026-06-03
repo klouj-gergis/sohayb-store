@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { X } from "lucide-react"
 import { useCart } from "../context/CartContext"
 import type {CartItem} from "../context/CartContext"
+import { toast } from 'react-hot-toast';
 
 export default function Checkout({ closeCheckout }: { closeCheckout: (open: boolean) => void}) {
   const [checkoutData, setCheckoutData] = useState({
@@ -24,6 +25,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
     window.open(`https://wa.me/201012425386?text=${encodeURIComponent(msg)}`)
     closeCheckout(false)
     clearCart()
+    toast.success('Order placed successfully! We will contact you soon.')
   }
 
   return (

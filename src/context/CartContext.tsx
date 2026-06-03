@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
+import { toast } from 'react-hot-toast';
 // Types
 export interface CartItem {
   id: number | string;
@@ -66,14 +67,15 @@ useEffect(() => {
       } else {
         return [...prevItems, { ...product, quantity: 1 }]; // ✅ was missing
       }
+      
     });
-
+    toast.success(`${product.name} added to cart!`);
   };
 
   // ✅ Renamed to match context value
   const removeItem = (productId: CartItem['id']) => {
     setItems((prevItems) => prevItems.filter(item => item.id !== productId));
-
+    toast.success(`Item removed from cart!`);
   };
 
   // ✅ Renamed to match context value
@@ -96,7 +98,7 @@ useEffect(() => {
     );
   };
 
-  const clearCart = () => {setItems([])};
+  const clearCart = () => {setItems([]); toast.success('Cart cleared!')};
 
   // ✅ Was referencing `items` before it existed (state was named `cartItems`)
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
