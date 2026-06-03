@@ -19,7 +19,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
   const { items, clearCart } = useCart();
 
   function buildOrderMessage(data: { name: string, phone: string, address: string, payment_method: string, sender: string}, items: CartItem[]){  
-    return `Hi,\nI would like to order these items, ${items.map(item => {
+    return `Hi,\nI would like to order these items\n ${items.map(item => {
       return `name: ${item.name}\n quantity: ${item.quantity}\n`
     })}\n My Info: \nName: ${data.name}\n Phone: ${data.phone}\n Payment method: ${data.payment_method}\n ${data.sender ? 'sender: ' + data.sender : ''}\n Address: ${data.address}`
   }
