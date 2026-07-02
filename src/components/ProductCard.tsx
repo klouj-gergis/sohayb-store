@@ -19,7 +19,7 @@ export default function ProductCard({ productData, currency }: { productData: {
     });
   };
   return (
-    <div className="bg-bg h-48 lg:h-[70vh] rounded-lg shadow-shadow p-4 flex flex-col items-center gap-5">
+    <div className="bg-bg h-48 lg:h-[70vh] rounded-lg shadow-shadow p-4 flex lg:flex-col items-center gap-5">
       <div className="h-2/3 w-fit bg-accent/30 rounded-lg overflow-hidden">
         <img src={productData.image} alt={productData.name} className="h-full mx-auto object-cover rounded-lg" />
       </div>
