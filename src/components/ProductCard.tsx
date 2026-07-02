@@ -20,10 +20,10 @@ export default function ProductCard({ productData, currency }: { productData: {
   };
   return (
     <div className="bg-bg h-48 lg:h-[70vh] rounded-lg shadow-shadow p-4 flex lg:flex-col items-center gap-5">
-      <div className="h-2/3 w-fit bg-accent/30 rounded-lg overflow-hidden">
-        <img src={productData.image} alt={productData.name} className="h-full mx-auto object-cover rounded-lg" />
+      <div className="h-full lg:h-2/3 w-1/3 lg:w-fit bg-accent/30 rounded-lg overflow-hidden">
+        <img src={productData.image} alt={productData.name} className="w-full lg:h-full mx-auto object-cover rounded-lg" />
       </div>
-      <div className="w-full h-1/3 flex flex-col justify-between  pt-3 px-2">
+      <div className="w-2/3 lg:w-full h-full lg:h-1/3 flex flex-col justify-between  pt-3 px-2">
         <span className="flex flex-col gap-1">
           <h3 className="text-md text-dark-accent font-semibold">{productData.name }</h3>
       <p className="text-md text-accent">{productData.description}</p>

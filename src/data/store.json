@@ -5,8 +5,8 @@
     "tagline": "Handmade candles for every occasion",
     "currency": "EGP",
     "whatsApp": "https://wa.me/201012425386",
-    "instagram": "https://www.instagram.com/anglesforcandles",
-    "tiktok": "https://www.tiktok.com/@anglesforcandles"
+    "instagram": "https://www.instagram.com/sohaybgrove/?utm_source=ig_web_button_share_sheet",
+    "tiktok": ""
   },
   "theme" : {
     "primaryColor": "#fff",
@@ -81,7 +81,7 @@
   "about": {
     "title": "Our Story",
     "content": "Sohayb Grove is a family business that started with the planting of the first olive tree by Sohayb’s father, the project wasn’t just simple agricultural project, it was the start of a true value that combines the family’s passion with the quality of the land from north sinai.we offer premium olive oil for a unique experience worthy of you. Sohayb",
-    "image": "images/about.webp",
+    "image": "images/about.png",
     "ctaText": "Shop Our Collection",
     "ctaLink": "/products"
   },
