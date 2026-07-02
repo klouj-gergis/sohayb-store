@@ -25,9 +25,9 @@ export default function ReviewsCarosel() {
       <div className="flex w-fit">
        {
         reviews.map((review, index) => (
-          <div key={index} className="bg-accent/40 w-screen lg:h-screen p-10 flex flex-col items-center justify-center gap-4 snap-start snap-always">
-            <FaQuoteLeft className="text-accent text-9xl"/>
-            <p className="text-center text-lg lg:text-2xl max-w-4/6 text-dark-accent">{review.comment}</p>
+          <div key={index} className="bg-accent w-screen lg:h-screen p-10 flex flex-col items-center justify-center gap-4 snap-start snap-always">
+            <FaQuoteLeft className="text-bg text-9xl"/>
+            <p className="text-center text-lg lg:text-2xl max-w-4/6 text-bg">{review.comment}</p>
             {
               review.rating && (
                 <div className="flex gap-1">
@@ -37,7 +37,7 @@ export default function ReviewsCarosel() {
                 </div>
               )
             }
-            <h3 className="text-3xl font-bold text-accent">--{review.name}</h3>
+            <h3 className="text-3xl font-bold text-bg">--{review.name}</h3>
 
           </div>
         ))

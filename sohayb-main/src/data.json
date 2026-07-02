@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "large", "price": "600", "size": "1000ml", "imageUrl": "/images/bottle.jpg" },
+  { "id": 2, "name": "meduim", "price": "320", "size": "500ml", "imageUrl": "/images/bottle.jpg" },
+  { "id": 3, "name": "Small", "price":"180", "size": "250ml", "imageUrl": "/images/bottle.jpg" }
+]

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+
+@theme{
+  --color-olive: #323C24;
+  --color-olive-dark: #626C38;
+  --color-bgs: #c5cf9b;
+  --font-display: "Edu NSW ACT Hand Pre", sans-serif;
+}

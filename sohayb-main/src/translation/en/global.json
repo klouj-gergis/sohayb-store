@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "header": "Sohayb Premium Extra virgin olive oil from our land in Sinai.",
+    "text": "Rich in Antioxidants Packed with Omega-9, Vitamin E, and polyphenols – great for heart health and immunity.",
+    "button": "Buy now"
+  },
+  "about": {
+    "header": "About us" ,
+    "intro": "Since 2017, our journey began as a family — with the planting of our first olive tree in the land of North Sinai. This wasn’t just a farming project; it was the beginning of a shared dream, where every family member had a role and left their mark.",
+    "outro": "Sohayb Olive Oil is more than just a product — it’s the result of real family effort, built on trust, hard work, and shared vision across generations. Every bottle carries our name… and tells our story.",
+    "people": [
+      {
+        "name": "Mr. Mahmoud Mousa",
+        "story": "the father and pillar of the family, was the first to believe in the vision. He spent years caring for each tree, nurturing the land as if it were part of himself — planting, watering, and following every step with love and dedication."
+      },
+      {
+        "name": "Mrs. Samah Ibrahim",
+        "story": " the mother, was the mind behind the organization of the farm. She oversaw daily operations, managed the flow of work, and provided both financial and emotional support. Always working quietly behind the scenes, she was the steady force that held everything together and pushed the family forward during challenging times."
+      },
+      {
+        "name": "Sohayb Mahmoud",
+        "story": "the eldest son, took the family’s vision to the next level. He built the brand, led the design and marketing efforts, and shared the story with the world. Thanks to his work, Sohayb Olive Oil became a name that reflects both quality and identity."
+      },
+      {
+        "name": "Nour El-Din Mahmoud",
+        "story": "the youngest, was always present during harvest days. Despite his young age, he helped collect the olives, arrange the bottles, and contribute with joy and enthusiasm."
+      }
+    ],
+    "toggle": {
+      "more": "Read more",
+      "less": "See less"
+    }
+  },
+  "product": {
+    "name": "Sohayb Olive Oil"
+  },
+
+  "checkoutForm" : {
+    "header": "Checkout",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "governate": "Governate",
+    "paymentMethod": "Payment Method",
+    "submitButton": "Place Order"
+  }, 
+
+  "cart": {
+  "header": "Shopping Cart",
+  "empty": "Your cart is empty",
+  "subtotal": "Subtotal",
+  "taxRate": "Tax Rate",
+  "checkoutButton": "Checkout"
+}
+
+}

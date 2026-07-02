@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "header": ".زيت زتون صهيب البكر الممتاز من ارضنا في سيناء",
+    "text": "غني بمضادات الأكسدة والبوليفينولات - مفيد لصحة القلب وجهاز المناعة, يحتوي على أوميغا-9 , E فيتامين",
+    "button": "اشتري الان"
+  },
+  "about": {
+    "header": "من نحن",
+    "intro": "Since 2017, our journey began as a family — with the planting of our first olive tree in the land of North Sinai. This wasn’t just a farming project; it was the beginning of a shared dream, where every family member had a role and left their mark.",
+    "outro": "Sohayb Olive Oil is more than just a product — it’s the result of real family effort, built on trust, hard work, and shared vision across generations. Every bottle carries our name… and tells our story.",
+    "people": [
+      {
+        "name": "Mahmoud Mousa",
+        "story": "the father and pillar of the family, was the first to believe in the vision. He spent years caring for each tree, nurturing the land as if it were part of himself — planting, watering, and following every step with love and dedication."
+      },
+      {
+        "name": "Samah Ibrahim",
+        "story": " the mother, was the mind behind the organization of the farm. She oversaw daily operations, managed the flow of work, and provided both financial and emotional support. Always working quietly behind the scenes, she was the steady force that held everything together and pushed the family forward during challenging times."
+      },
+      {
+        "name": "Sohayb Mahmoud",
+        "story": "the eldest son, took the family’s vision to the next level. He built the brand, led the design and marketing efforts, and shared the story with the world. Thanks to his work, Sohayb Olive Oil became a name that reflects both quality and identity."
+      },
+      {
+        "name": "Nour El-Din Mahmoud",
+        "story": "the youngest, was always present during harvest days. Despite his young age, he helped collect the olives, arrange the bottles, and contribute with joy and enthusiasm."
+      }
+    ],
+    "toggle": {
+      "more": "المزيد",
+      "less": "أقل"
+    }
+  },
+  "product": {
+    "name": "زيت زتون صهيب"
+  }, 
+
+  "checkoutForm": {
+  "header": "إتمام الشراء",
+  "name": "الاسم",
+  "email": "البريد الإلكتروني",
+  "phone": "رقم الهاتف",
+  "address": "العنوان",
+  "city": "المدينة",
+  "governate": "المحافظة",
+  "paymentMethod": "طريقة الدفع",
+  "submitButton": "إتمام الطلب"
+},
+
+  "cart": {
+    "header": "عربة التسوق",
+    "empty": "عربة التسوق فارغة",
+    "subtotal": "المجموع الفرعي",
+    "taxRate": "النسبة الضريبية",
+    "checkoutButton": "إتمام الشراء"
+  }
+}

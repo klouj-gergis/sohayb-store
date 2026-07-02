@@ -4,7 +4,7 @@ export default function About(){
     return (
         <section id="about" className="w-full flex flex-col lg:flex-row items-center justify-center bg-dark-accent py-10 px-5 lg:gap-5 rounded-t-4xl lg:rounded-none">
             <div className="w-40 lg:w-3/6 h-40 lg:h-96 rounded-full lg:rounded-none overflow-hidden">
-                <img src="/about_candle.png" alt="owner's image" className="w-full" />
+                <img src={storeData.about.image} alt="owner's image" className="w-full -translate-y-5/12" />
             </div>
             <div className="w-full lg:w-3/6 flex flex-col items-center lg:items-start  py-5  gap-5">
                 <h3 className="text-xl lg:text-3xl text-center lg:text-left text-bg font-bold w-full">

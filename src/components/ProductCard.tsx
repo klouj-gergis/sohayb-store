@@ -19,11 +19,11 @@ export default function ProductCard({ productData, currency }: { productData: {
     });
   };
   return (
-    <div className="bg-bg h-48 lg:h-56 rounded-lg shadow-shadow p-4 flex items-center gap-5">
-      <div className="w-1/3 h-full bg-accent/30 rounded-lg overflow-hidden">
-        <img src={productData.image} alt={productData.name} className="h-full  object-cover rounded-lg" />
+    <div className="bg-bg h-48 lg:h-[70vh] rounded-lg shadow-shadow p-4 flex flex-col items-center gap-5">
+      <div className="h-2/3 w-fit bg-accent/30 rounded-lg overflow-hidden">
+        <img src={productData.image} alt={productData.name} className="h-full mx-auto object-cover rounded-lg" />
       </div>
-      <div className="w-2/3 h-full flex flex-col justify-between  pt-3">
+      <div className="w-full h-1/3 flex flex-col justify-between  pt-3 px-2">
         <span className="flex flex-col gap-1">
           <h3 className="text-md text-dark-accent font-semibold">{productData.name }</h3>
       <p className="text-md text-accent">{productData.description}</p>

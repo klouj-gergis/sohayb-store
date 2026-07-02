@@ -1,7 +1,7 @@
 {
   "store": {
-    "name": "Angles for candles",
-    "logo": "",
+    "name": "Sohayb grove",
+    "logo": "images/logo.png",
     "tagline": "Handmade candles for every occasion",
     "currency": "EGP",
     "whatsApp": "https://wa.me/201012425386",
@@ -9,10 +9,10 @@
     "tiktok": "https://www.tiktok.com/@anglesforcandles"
   },
   "theme" : {
-    "primaryColor": "#FAF7F2",
-    "accentColor": "#C4855A",
+    "primaryColor": "#fff",
+    "accentColor": "#323C24",
     "bgAccentColor": "#F5ECD7",
-    "darkAccentColor": "#8B5E3C",
+    "darkAccentColor": "#626C38",
     "fontHeading": "Playfair Display",
     "fontBody": "Inter",
     "fontAccent": "Playball"
@@ -23,11 +23,11 @@
     "linkText": "Shop Now"
   },
   "hero": {
-    "title-first": "Made by Hand",
-    "title-second": "Felt by Heart",
-    "subtitle": "Discover our handmade candles, crafted with love and care.",
+    "title-first": "True taste",
+    "title-second": "Begins here, Authintic",
+    "subtitle": "Harvest of the year for better health.",
     "description": "Discover our handmade candles, crafted with love and care. Perfect for any occasion.",
-    "image": "hero.png",
+    "image": "images/hero.png",
     "ctaText": "Shop Now",
     "ctaLink": "/products",
     "secondaryCtaText": "Custom Order",
@@ -39,21 +39,21 @@
       "name": "Lavender Scented Candle",
       "description": "Relaxing lavender scent in a beautiful glass jar.",
       "price": 150,
-      "image": "/candle_1.png"
+      "image": "images/product-1.png"
     },  
     {
       "id": 2,
       "name": "Vanilla Bean Candle",
       "description": "Warm vanilla scent in a rustic tin container.",
       "price": 120,
-      "image": "/candle_2.png"
+      "image": "images/product-2.webp"
     },
     {
       "id": 3,
       "name": "Rose Garden Candle",
       "description": "Floral rose scent in an elegant ceramic holder.",
       "price": 180,
-      "image": "/candle_3.png"
+      "image": "images/product-1.png"
     }
   ],
   "payment": {
@@ -79,9 +79,9 @@
     }
   ],
   "about": {
-    "title": "The Artisan's Story",
-    "content": "At Angles for Candles, we are passionate about creating beautiful, high-quality candles that bring warmth and ambiance to your home. Our candles are handmade using the finest ingredients, ensuring a long-lasting and delightful fragrance experience. Whether you're looking for a relaxing lavender scent or a romantic rose aroma, we have the perfect candle for every occasion.",
-    "image": "https://example.com/about-image.jpg",
+    "title": "Our Story",
+    "content": "Sohayb Grove is a family business that started with the planting of the first olive tree by Sohayb’s father, the project wasn’t just simple agricultural project, it was the start of a true value that combines the family’s passion with the quality of the land from north sinai.we offer premium olive oil for a unique experience worthy of you. Sohayb",
+    "image": "images/about.webp",
     "ctaText": "Shop Our Collection",
     "ctaLink": "/products"
   },
