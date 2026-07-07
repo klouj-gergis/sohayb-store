@@ -19,7 +19,7 @@ export default function ProductCard({ productData, currency }: { productData: {
     });
   };
   return (
-    <div className="bg-bg h-48 lg:h-[70vh] rounded-lg shadow-shadow p-4 flex lg:flex-col items-center gap-5">
+    <div className="bg-bg h-48 lg:h-[70vh]  min-w-1/3 rounded-lg shadow-shadow p-4 flex lg:flex-col items-center gap-5">
       <div className="h-full lg:h-2/3 w-1/3 lg:w-fit bg-accent/30 rounded-lg overflow-hidden">
         <img src={productData.image} alt={productData.name} className="w-full lg:h-full mx-auto object-cover rounded-lg" />
       </div>
@@ -29,7 +29,7 @@ export default function ProductCard({ productData, currency }: { productData: {
       <p className="text-md text-accent">{productData.description}</p>
         </span>
       <span className="flex justify-between items-center">
-        <p className="text-2xl font-bold text-dark-accent">{currency} {productData.price}</p>
+        <p className="text-2xl font-bold text-dark-accent"> {productData.price} {currency}</p>
         <button onClick={handleAddToCart} title="add to cart" type="button" className="p-2 bg-accent/30 text-dark-accent rounded-full hover:bg-accent/50 cursor-pointer transition-colors"><Plus /></button>
       </span>
       </div>

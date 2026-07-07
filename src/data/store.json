@@ -3,16 +3,16 @@
     "name": "Sohayb grove",
     "logo": "images/logo.png",
     "tagline": "Handmade candles for every occasion",
-    "currency": "EGP",
+    "currency": "LE",
     "whatsApp": "https://wa.me/201012425386",
     "instagram": "https://www.instagram.com/sohaybgrove/?utm_source=ig_web_button_share_sheet",
     "tiktok": ""
   },
   "theme" : {
     "primaryColor": "#fff",
-    "accentColor": "#323C24",
-    "bgAccentColor": "#F5ECD7",
-    "darkAccentColor": "#626C38",
+    "accentColor": "#000",
+    "bgAccentColor": "#000",
+    "darkAccentColor": "#000",
     "fontHeading": "Playfair Display",
     "fontBody": "Inter",
     "fontAccent": "Playball"
@@ -36,29 +36,22 @@
   "products": [
     {
       "id": 1,
-      "name": "Lavender Scented Candle",
-      "description": "Relaxing lavender scent in a beautiful glass jar.",
-      "price": 150,
+      "name": "Extra virgin Olive Oil",
+      "description": "250 ml",
+      "price": 240,
       "image": "images/product-1.png"
     },  
     {
       "id": 2,
-      "name": "Vanilla Bean Candle",
-      "description": "Warm vanilla scent in a rustic tin container.",
-      "price": 120,
+      "name": "Extra virgin Olive Oil",
+      "description": "500 ml",
+      "price": 420,
       "image": "images/product-2.webp"
-    },
-    {
-      "id": 3,
-      "name": "Rose Garden Candle",
-      "description": "Floral rose scent in an elegant ceramic holder.",
-      "price": 180,
-      "image": "images/product-1.png"
     }
   ],
   "payment": {
     "methods": [{ "enabled": true, "name": "vodafone cash", "value": "vodafone_cash", "reciever": "0123456789"}, { "enabled": false, "name": "fawry", "reciever": "xxxxxx", "value": "fawry"}, { "name": "Cash on Delivery", "enabled": true , "value": "cod", "reciever": ""}],
-    "currency": "EGP"
+    "currency": "LE"
   },
   "pages": [
     {

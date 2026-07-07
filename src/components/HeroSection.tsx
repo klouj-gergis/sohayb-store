@@ -13,7 +13,6 @@ export default function HeroSection() {
         <p className="px-2 text-center text-lg md:text-xl text-dark-accent/80 ">{storeData.hero.subtitle}</p>
         <div className="flex items-center gap-4">
           <a href="#catalog" className="inline-block px-6 py-3 bg-accent text-white rounded hover:bg-dark-accent transition-colors">{storeData.hero.ctaText}</a>
-        <a href={storeData.store.whatsApp} className="inline-block px-6 py-3 bg-dark-accent text-white rounded hover:bg-accent transition-colors">{storeData.hero.secondaryCtaText}</a>
         </div>
       </div>
       <div className="w-full lg:w-1/2 h-full flex items-center justify-center">

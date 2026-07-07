@@ -22,7 +22,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
           <ul className="flex items-center gap-6 font-body">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.link} className="text-bg hover:text-dark-accent transition-colors">{link.name}</a>
+                <a href={link.link} className="text-bg hover:text-bg/70 transition-colors">{link.name}</a>
               </li>
             ))}
           </ul>
@@ -31,9 +31,9 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
 
       <div className="flex items-center gap-4">
         
-        <button type="button" onClick={() => openCart(true)} title="cart" className="text-bg cursor-pointer hover:text-dark-accent relative">
+        <button type="button" onClick={() => openCart(true)} title="cart" className="text-bg cursor-pointer hover:text-bg/70 relative">
             {cartCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-accent text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">{cartCount}</span>
+              <span className="absolute -top-2 -right-2 bg-accent text-bg text-xs w-5 h-5 rounded-full flex items-center justify-center">{cartCount}</span>
             )}
             <ShoppingBag />
           </button>
