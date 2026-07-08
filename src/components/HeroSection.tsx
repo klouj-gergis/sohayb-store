@@ -15,8 +15,8 @@ export default function HeroSection() {
           <a href="#catalog" className="inline-block px-6 py-3 bg-accent text-white rounded hover:bg-dark-accent transition-colors">{storeData.hero.ctaText}</a>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 h-2/3 flex items-center justify-center">
-        <img src={storeData.hero.image} alt="Hero Image" className="w-2/3 h-auto object-cover rounded-md" />
+      <div className="w-full lg:w-1/2 h-2/3 flex items-center justify-center p-5">
+        <img src={storeData.hero.image} alt="Hero Image" className=" object-cover rounded-md" />
       </div>
     </div>
   )
