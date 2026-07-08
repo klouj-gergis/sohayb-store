@@ -1,7 +1,7 @@
 {
   "store": {
     "name": "Sohayb grove",
-    "logo": "images/logo-black.png",
+    "logo": "images/logo-white.png",
     "tagline": "Handmade candles for every occasion",
     "currency": "LE",
     "whatsApp": "https://wa.me/201012425386",
@@ -13,8 +13,8 @@
     "accentColor": "#000",
     "bgAccentColor": "#000",
     "darkAccentColor": "#000",
-    "fontHeading": "Playfair Display",
-    "fontBody": "Inter",
+    "fontHeading": "Droid Serif",
+    "fontBody": "Droid Serif",
     "fontAccent": "Playball"
   },
   "anouncement": {
@@ -36,15 +36,15 @@
   "products": [
     {
       "id": 1,
-      "name": "Extra virgin Olive Oil",
-      "description": "250 ml",
+      "name": "Extra virgin Olive Oil 250 ml",
+      "description": "Hand-picked from our family grove in North Sinai. Cold pressed, made from Picual olives, and 100% natural with no additives or chemicals.",
       "price": 240,
       "image": "images/product-1.png"
     },  
     {
       "id": 2,
-      "name": "Extra virgin Olive Oil",
-      "description": "500 ml",
+      "name": "Extra virgin Olive Oil 500 ml",
+      "description": "Hand-picked from our family grove in North Sinai. Cold pressed, made from Picual olives, and 100% natural with no additives or chemicals.",
       "price": 420,
       "image": "images/product-2.webp"
     }
@@ -73,7 +73,7 @@
   ],
   "about": {
     "title": "Our Story",
-    "content": "Sohayb Grove is a family business that started with the planting of the first olive tree by Sohayb’s father, the project wasn’t just simple agricultural project, it was the start of a true value that combines the family’s passion with the quality of the land from north sinai.we offer premium olive oil for a unique experience worthy of you. Sohayb",
+    "content": "Sohayb Grove is a family business that started with the planting of the first olive tree by Sohayb’s father, the project wasn’t just simple agricultural project, it was the start of a true value that combines the family’s passion with the quality of the land from North Sinai. We offer premium olive oil for a unique experience worthy of you.",
     "image": "images/about.png",
     "ctaText": "Shop Our Collection",
     "ctaLink": "/products"
