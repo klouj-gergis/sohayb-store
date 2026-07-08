@@ -4,8 +4,9 @@
     "logo": "images/logo.png",
     "tagline": "Handmade candles for every occasion",
     "currency": "LE",
-    "whatsApp": "https://wa.me/201012425386",
-    "instagram": "https://www.instagram.com/sohaybgrove/?utm_source=ig_web_button_share_sheet",
+    "whatsApp": "https://wa.me/201080110619",
+    "instagram": "https://www.instagram.com/sohaybgrove?igsh=ZmMzMWhkZ3Y4MzFp",
+    "facebook": "https://www.facebook.com/share/1BW7WMce9G/",
     "tiktok": ""
   },
   "theme" : {
@@ -27,7 +28,7 @@
     "title-second": "Begins here, Authintic",
     "subtitle": "Harvest of the year for better health.",
     "description": "Discover our handmade candles, crafted with love and care. Perfect for any occasion.",
-    "image": "images/hero.png",
+    "image": "images/hero.jpeg",
     "ctaText": "Shop Now",
     "ctaLink": "/products",
     "secondaryCtaText": "Custom Order",
@@ -39,14 +40,14 @@
       "name": "Extra virgin Olive Oil 250 ml",
       "description": "Hand-picked from our family grove in North Sinai. Cold pressed, made from Picual olives, and 100% natural with no additives or chemicals.",
       "price": 240,
-      "image": "images/product-1.png"
+      "image": "images/product_250.png"
     },  
     {
       "id": 2,
       "name": "Extra virgin Olive Oil 500 ml",
       "description": "Hand-picked from our family grove in North Sinai. Cold pressed, made from Picual olives, and 100% natural with no additives or chemicals.",
       "price": 420,
-      "image": "images/product-2.webp"
+      "image": "images/product_500.png"
     }
   ],
   "payment": {
