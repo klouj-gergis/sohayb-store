@@ -81,19 +81,25 @@
   },
   "reviews": [
     {
-      "name": "Sarah M.",
+      "name": "Ahmed Eid",
       "rating": 5,
-      "comment": "I absolutely love the lavender scented candle! It fills my room with such a calming aroma. Highly recommend!"
+      "comment": "El zeit zatoun helw awi msa"
     },
     {
-      "name": "Ahmed K.",
+      "name": "Eng.abdelrahman",
       "rating": 4,
-      "comment": "The vanilla bean candle has a wonderful scent and burns evenly. Great quality for the price."
+      "comment": "جميل جدا ... ريحته حلوة و طعمه جميل تسلم ايدكم"
     },
     {
-      "name": "Lina S.",
+      "name": "Abdullah",
       "rating": 5,
-      "comment": "The rose garden candle is stunning! The floral scent is perfect for creating a romantic atmosphere."
+      "comment": "مساء الخير الزيت كجودة كان جميل وطعمه راق ليا جدا والباكديج للمنتج وصلي متغلف كويس واحييكم علي اللي غلف المنتج التغليف الممتاز دا عشان حصلي اكتر من مره مشكلة بسبب المناديب اللي بتوصلي الحاجه مكسوره او مكببوبه للاسف... فشكرا ليكم"
+    },
+    {
+      "name": "Fatma saad",
+      "rating": 5,
+      "comment": "كل حاجة حلوة جدا من افضل انواع الزيت اللي جربتها في حياتي وانا بشرب معلقة منه فا مش على الاكل بس وطعمه تحفة  والتغليف كمان"
     }
+    
   ]
 }
