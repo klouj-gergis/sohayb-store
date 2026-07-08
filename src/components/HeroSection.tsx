@@ -4,7 +4,7 @@ export default function HeroSection() {
   const storeData = useStore();
   return (
     <div className="w-full h-[90vh] bg-bg flex flex-col-reverse lg:flex-row items-center justify-center">
-      <div className="max-w-7xl mx-auto h-full flex flex-col  justify-center items-center gap-6">
+      <div className="max-w-7xl mx-auto h-1/3 flex flex-col  justify-center items-center gap-6">
         <h1 className="text-4xl md:text-6xl font-extrabold text-dark-accent tracking-wide text-center">
           <span className="text-dark-accent">{storeData.hero["title-first"]}.</span>
           <br /> 
@@ -15,7 +15,7 @@ export default function HeroSection() {
           <a href="#catalog" className="inline-block px-6 py-3 bg-accent text-white rounded hover:bg-dark-accent transition-colors">{storeData.hero.ctaText}</a>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 h-full flex items-center justify-center">
+      <div className="w-full lg:w-1/2 h-2/3 flex items-center justify-center">
         <img src={storeData.hero.image} alt="Hero Image" className="w-2/3 h-auto object-cover rounded-md" />
       </div>
     </div>
