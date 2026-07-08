@@ -44,7 +44,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
       <div className="flex items-center gap-2">
         <DropdownMenu options={storeData.pages} />
       </div>
-        <img src={storeData.store.logo} alt={storeData.store.name} className="h-12" />
+        <img src={storeData.store.logo} alt={storeData.store.name} className="h-14" />
       <div className="flex items-center gap-4">
           <button type="button" onClick={() => openCart(true)} title="cart" className="text-dark-accent cursor-pointer hover:text-accent relative">
             {cartCount > 0 && (
