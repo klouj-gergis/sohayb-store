@@ -65,7 +65,7 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
         {
           checkoutData.payment_method !== 'cod' && <div className="w-full mx-11 flex flex-col gap-1">
             <hr />
-            <p className="text-sm text-center text-dark-accent">Please send the total payment ammount to this vodafone cash number: <span className="text-lg font-semibold">{checkoutData.receiver}</span> after that you can enter the sender's phone number for Vodafone Cash payment.</p>
+            <p className="text-sm text-center text-dark-accent">Please send the total payment ammount to this {checkoutData.payment_method} number: <span className="text-lg font-semibold">{checkoutData.receiver}</span> after that you can enter the sender's phone number for Vodafone Cash payment.</p>
             <label >Sender Number:</label>
             <input value={checkoutData.sender} onChange={(e) => setCheckoutData({ ...checkoutData, sender: e.target.value})} type="phone" title="sender's phone number" placeholder="01234567891" className="border p-2 rounded-md" required />
           </div>
