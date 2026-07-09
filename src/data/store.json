@@ -51,7 +51,7 @@
     }
   ],
   "payment": {
-    "methods": [{ "enabled": true, "name": "vodafone cash", "value": "vodafone_cash", "reciever": "0123456789"}, { "enabled": false, "name": "fawry", "reciever": "xxxxxx", "value": "fawry"}, { "name": "Cash on Delivery", "enabled": true , "value": "cod", "reciever": ""}],
+    "methods": [{ "enabled": true, "name": "Wallet", "value": "wallet", "reciever": "01289089376"}, { "enabled": true, "name": "InstaPay", "value": "instapay", "reciever": "01225134007"}, { "enabled": false, "name": "Fawry", "reciever": "xxxxxx", "value": "fawry"}, { "name": "Cash on Delivery", "enabled": true , "value": "cod", "reciever": ""}],
     "currency": "LE"
   },
   "pages": [
@@ -87,7 +87,7 @@
     },
     {
       "name": "Eng.abdelrahman",
-      "rating": 4,
+      "rating": 5,
       "comment": "جميل جدا ... ريحته حلوة و طعمه جميل تسلم ايدكم"
     },
     {

@@ -16,7 +16,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="w-full lg:w-1/2 h-fit flex items-center justify-center px-5">
-        <img src={storeData.hero.image} alt="Hero Image" className=" object-cover rounded-md" />
+        <img src={storeData.hero.image} alt="Hero Image" className="lg:w-2/3 object-cover rounded-md" />
       </div>
     </div>
   )

@@ -20,7 +20,7 @@ export default function Cart({ currency, openCheckout }: { currency: string, ope
                     items.map((item: any) => (
                       <div key={item.id} className="flex items-center gap-4 h-fit">
                         <div className="w-1/4 h-24 bg-accent/30 rounded-lg overflow-hidden">
-                          <img src={item.image} alt={item.name} className="h-full object-cover rounded-lg" />
+                          <img src={item.image} alt={item.name} className="w-full h-full rounded-lg" />
                         </div>
                         <div className="w-3/4 flex flex-col justify-between gap-5">
                           <div className="flex items-center justify-between">
