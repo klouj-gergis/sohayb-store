@@ -16,7 +16,6 @@ export default function Checkout({ closeCheckout }: { closeCheckout: (open: bool
   })
   const { methods: payment_methods } = useStore().payment;
   const storeData  = useStore();
-  const vcashreciever = payment_methods.find((method: { value: string }) => method.value === 'vodafone_cash')?.reciever || '';
   const { items, clearCart } = useCart();
 
   function buildOrderMessage(data: { name: string, phone: string, address: string, payment_method: string, sender: string}, items: CartItem[]){  
