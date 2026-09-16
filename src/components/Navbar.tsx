@@ -12,7 +12,7 @@ export default function Navbar({openCart}: {openCart: (open: boolean) => void}) 
     <nav className="hidden w-full lg:flex items-center justify-between py-4 px-6 bg-accent">
       {
         storeData.store.logo ? (
-          <img src={storeData.store.logo} alt={storeData.store.name} className="h-12" />
+          <img src={storeData.store.logo} alt={storeData.store.name} className="h-12 invert" />
         ) : (<h1 className="text-3xl font-extrabold text-dark-accent font-accent tracking-wide">{storeData.store.name}</h1>
 )
       }
